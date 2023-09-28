@@ -1,96 +1,103 @@
-﻿//int point = 77;
+﻿
 
-//if(point>=0 && point<=100)
-//{
-//    if(point>=91)
-//    {
-//        Console.WriteLine("A almisan");
-//    }
-//    else if(point>=81)
-//    {
-//        Console.WriteLine("B almisan");
-//    }
-//    else if(point>=71)
-//    {
-//        Console.WriteLine("C almisan");
-//    }
-//    else if(point >=61)
-//    {
-//        Console.WriteLine("D almisan");
-//    }
-//    else if(point>=51)
-//    {
-//        Console.WriteLine("E almisan");
-//    }
-//    else
-//    {
-//        Console.WriteLine("Kesilmisen");
-//    }
-//}
-//else
-//{
-//    Console.WriteLine("Bele bir point yoxdur");
-//}
-
-
-
-
-
-//int i = 1;
+//int[] numbers2 = new int[4];
+//int[] numbers3 = new int[4] { 6, 7, 8, 9};
+//int[] numbers4 = new int[] { 10, 11, 12, 13 };
+//int[] numbers = { 1, 2, 3, 4, 43};
 //int sum = 0;
-
-//while(i<=10)
+//for(int i=0;i<numbers.Length;i++)
 //{
-//    if(i%2==0)
-//    {
-//        sum += i;
-//    }
-//    i++;
-
-
+//    sum+=numbers[i];
 //}
-//Console.WriteLine("cemi " + sum);
+//string[] bb103 = { "Narmine", "Narmin", "Aysu" };
 
 
-int i = 1;
-int sum = 0;
+//for(int i=0;i<bb103.Length;i++)
+//{
+//    if(bb103[i]=="Aysu")
+//    {
+//        Console.WriteLine("Beli var");
+//        Console.WriteLine("indexi " +i);
+//        break;
+//    }
+//}
 
-while (i <= 100)
+//string word = "Salam";
+//string[] bb = { "Narmine", "Narmin", "Aysu",word };
+
+//for(int i=word.Length-1;i>=0;i--)
+//{
+//    if(word[i]=='S')
+//    {
+//        continue;
+//    }
+//    Console.WriteLine(word[i]);
+//}
+
+
+//int[] arr = { 1, 4, 2, 5, 19, 45 };
+//int sum = 0;
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    sum += arr[i];
+//}
+//Console.WriteLine(sum/arr.Length);
+
+
+//int[,] arr = { 
+//    { 1, 2, 3, 4 },
+//    {5,6,7,8},
+//};
+
+//for(int i = 0; i < arr.GetLength(0); i++)
+//{
+//    for(int j=0;j<arr.GetLength(1);j++)
+//    {
+//        Console.WriteLine(arr[i,j]);
+//    }
+//}
+//Console.WriteLine(arr.Rank);
+
+
+int n = 17;
+int donguSayi = 0;
+if(n>2)
 {
-    if (i % 5 == 0)
+    bool check = false;
+    for(int i=2;i*i<=n;i++)
     {
-        sum += i;
+        donguSayi++;
+        if(n%i==0)
+        {
+            check = true;
+            break;
+        }
     }
-    i++;
+    if(check)
+    {
+        Console.WriteLine("murekkebdir");
+    }
+    else
+    {
+        Console.WriteLine("sadedir");
+    }
+    Console.WriteLine("Dongu sayi "+donguSayi);
+
+
+
+
+
 }
-Console.WriteLine("merhele sayi" + i);
+else
+{
+    Console.WriteLine("ne sade nede murekkeb deyil");
+}
 
-//var sum = 0;
-//for (int i = 1; i <= 100; i++)
-//{
-//    if (i % 5 == 0)
-//    {
-//        sum += i;
-//    }
 
-//}
-//Console.WriteLine(sum);
 
-//int i = 101;
-//int sum = 0;
 
-//while (i <= 100)
-//{
-//    if (i % 5 == 0)
-//    {
-//        sum += i;
-//    }
-//    i++;
-//    Console.WriteLine("salam");
-//}
-//do
-//{
-//    Console.WriteLine("sagolun");
-//} while (i <= 100);
+
+
+
 
 
